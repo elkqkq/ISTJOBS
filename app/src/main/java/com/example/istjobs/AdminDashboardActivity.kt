@@ -2,6 +2,7 @@ package com.example.istjobs
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -11,26 +12,37 @@ class AdminDashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_dashboard) // Ensure this layout exists
 
-        findViewById<ImageButton>(R.id.jobsButton).setOnClickListener {
-            // Navigate to Jobs Activity
-            startActivity(Intent(this, JobsActivity::class.java)) // Ensure this activity exists
+        // Post Jobs Button
+        val postJobsButton = findViewById<Button>(R.id.jobsButton)
+        postJobsButton.setOnClickListener {
+            startActivity(Intent(this, PostJobsActivity::class.java))
         }
 
-        findViewById<ImageButton>(R.id.candidatesButton).setOnClickListener {
-            // Navigate to Candidates Activity
-            startActivity(Intent(this, CandidatesActivity::class.java)) // Ensure this activity exists
+        // Candidates Button
+        val candidatesButton = findViewById<Button>(R.id.candidatesButton)
+        candidatesButton.setOnClickListener {
+            startActivity(Intent(this, CandidatesActivity::class.java))
         }
 
-        findViewById<ImageButton>(R.id.profileButton).setOnClickListener {
-            // Navigate to Admin Profile Activity
-            startActivity(Intent(this, AdminProfileActivity::class.java)) // Ensure this activity exists
+        // Profile Button
+        val profileButton = findViewById<Button>(R.id.profileButton)
+        profileButton.setOnClickListener {
+            startActivity(Intent(this, AdminProfileActivity::class.java))
         }
 
-        findViewById<ImageButton>(R.id.logoutButton).setOnClickListener {
-            // Handle logout
-            FirebaseAuth.getInstance().signOut()
-            // Navigate to Login Activity
+        // Logout Button
+        val logoutButton = findViewById<Button>(R.id.logoutButton)
+        logoutButton.setOnClickListener {
+            // Handle Logout (e.g., sign out from Firebase)
             startActivity(Intent(this, AdminLoginActivity::class.java))
+            finish()
+        }
+
+        // Go Back Button
+        val goBackButton = findViewById<Button>(R.id.goBackButton)
+        goBackButton.setOnClickListener {
+            // Navigate back to the HomeActivity
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

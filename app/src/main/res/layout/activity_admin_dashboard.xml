@@ -3,52 +3,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center">
 
+    <!-- Admin Icon -->
+    <ImageView
+        android:id="@+id/adminIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/isticon"
+        android:layout_gravity="center"
+        android:contentDescription="Admin Icon"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter" />
+
+    <!-- Admin Text -->
     <TextView
+        android:id="@+id/adminText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Admin Dashboard"
+        android:text="Admin"
         android:textSize="24sp"
+        android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp" />
 
-    <ImageButton
+    <!-- Post Jobs Button -->
+    <Button
         android:id="@+id/jobsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
-        android:contentDescription="Jobs"
-        android:background="?attr/selectableItemBackground"
-        android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter" />
+        android:text="Post Jobs"
+        android:layout_marginBottom="16dp" />
 
-    <ImageButton
+    <!-- View Candidates Button -->
+    <Button
         android:id="@+id/candidatesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
-        android:contentDescription="Candidates"
-        android:background="?attr/selectableItemBackground"
-        android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter" />
+        android:text="Candidates"
+        android:layout_marginBottom="16dp" />
 
-    <ImageButton
+    <!-- Profile Button -->
+    <Button
         android:id="@+id/profileButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
-        android:contentDescription="Profile"
-        android:background="?attr/selectableItemBackground"
-        android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter" />
+        android:text="Profile"
+        android:layout_marginBottom="16dp" />
 
-    <ImageButton
+    <!-- Logout Button -->
+    <Button
         android:id="@+id/logoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
-        android:contentDescription="Logout"
-        android:background="?attr/selectableItemBackground" />
+        android:text="Logout"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Go Back Button -->
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back " />
 
 </LinearLayout>
+
+
+

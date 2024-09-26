@@ -1,89 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <!-- User Sign Up -->
+    <!-- IST Icon -->
     <ImageView
-        android:id="@+id/userImage"
+        android:id="@+id/istIconImage"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/user"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/isticon"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/userImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- User Image -->
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/usericon"
+        app:layout_constraintTop_toBottomOf="@id/istIconImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:contentDescription="User Icon" />
+        android:layout_marginTop="32dp"/>
 
+    <!-- User Button -->
     <Button
         android:id="@+id/userSignUpButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Sign Up"
+        android:text="User"
         app:layout_constraintTop_toBottomOf="@id/userImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp" />
 
-    <!-- User Login Link -->
-    <TextView
-        android:id="@+id/userLoginLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? Login here"
-        android:textColor="@android:color/holo_blue_dark"
-        android:padding="16dp"
-        android:textSize="16sp"
+    <!-- Admin Image -->
+    <ImageView
+        android:id="@+id/adminImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/adminiconn"
         app:layout_constraintTop_toBottomOf="@id/userSignUpButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        android:focusable="true" />
+        android:layout_marginTop="32dp"/>
 
-    <!-- Admin Sign Up -->
-    <ImageView
-        android:id="@+id/adminImage"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/admin"
-        app:layout_constraintTop_toBottomOf="@id/userLoginLink"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"
-        android:contentDescription="Admin Icon" />
-
+    <!-- Admin Button -->
     <Button
         android:id="@+id/adminSignUpButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Admin Sign Up"
+        android:text="Admin"
         app:layout_constraintTop_toBottomOf="@id/adminImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <!-- Admin Login Link -->
-    <TextView
-        android:id="@+id/adminLoginLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? Login here"
-        android:textColor="@android:color/holo_blue_dark"
-        android:padding="16dp"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/adminSignUpButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        android:focusable="true" />
-
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
 
 
 

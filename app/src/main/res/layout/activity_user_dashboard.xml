@@ -4,7 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <!-- User Icon -->
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/isticon"
+        android:layout_gravity="center"
+        android:contentDescription="User Icon"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter" />
+
+    <!-- User Text -->
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
 
     <!-- Search Jobs Button -->
     <Button
@@ -12,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Search Jobs"
-        android:layout_marginBottom="16dp"/>
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
 
     <!-- Notifications Button -->
     <Button
@@ -20,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Notifications"
-        android:layout_marginBottom="16dp"/>
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
 
     <!-- Profile Button -->
     <Button
@@ -28,14 +54,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Profile"
-        android:layout_marginBottom="16dp"/>
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
 
     <!-- Logout Button -->
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"/>
+        android:text="Logout"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Go Back Button -->
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
 
 </LinearLayout>
 
