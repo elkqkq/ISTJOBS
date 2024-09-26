@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Job Info -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Info"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/jobInfoField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job Info"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Job Start Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Start Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/startDateField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job Start Date"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Job Expiry Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Expiry Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/expiryDateField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job Expiry Date"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Job Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Description"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/descriptionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job Description"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Job Category -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/categoryField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job Category"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Number of Vacancies -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Vacancies"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/vacanciesField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number of Vacancies"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Company -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/companyField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Company Name"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Add Job Button -->
+    <Button
+        android:id="@+id/addJobButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Job"
+        android:layout_marginTop="16dp" />
+
+    <!-- Display Job Details -->
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+</LinearLayout>
